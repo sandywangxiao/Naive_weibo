@@ -1,0 +1,63 @@
+
+{% extends "base.html" %}
+
+  {% block head %}
+  {{super()}}
+  {% endblock %}
+
+
+{% block body %}
+
+
+<!--发布微博界面-->
+
+<div class="container">
+  <div class="page-header">
+    <div class="row">
+      <div class="col-md-3"></div>
+      <div class="col-md-6">
+        <div class="list-group">
+          <a class="list-group-item active">
+            <h4 class="list-group-item-heading">用户基本信息</h4>
+          </a>
+        </div>
+  <table class="table table-bordered">
+
+   <!--<caption>欢迎</caption>
+   <thead>
+   <tr>
+      <th>名称</th>
+      <th>城市</th>
+    </tr>
+  </thead>-->
+  <tbody>
+    <tr>
+      <td><em><strong>昵称</strong><em></td>
+      <td>女生们的女生</td>
+    </tr>
+    <tr>
+      <td><em><strong>性别</strong><em></td>
+      <td>女</td>
+    </tr>
+    <tr>
+      <td><em><strong>地区</strong><em></td>
+      <td>中国</td>
+    </tr>
+    <tr>
+      <td><em><strong>城市</strong><em></td>
+      <td>北京</td>
+    </tr>
+  </tbody>
+</table>
+      </div>
+      <div class="col-md-3"></div>
+    </div>
+  </div>
+</div>
+
+
+
+
+{% endblock %}
+
+

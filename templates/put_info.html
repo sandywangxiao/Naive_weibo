@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+
+{% block head %}
+{{super()}}
+{% endblock %}
+
+{% block body %}
+<div class="container">
+  <div class="page-header">
+    <div class="row">
+      <div class="col-md-3"></div>
+      <div class="col-md-6">
+        <div class="list-group">
+          <a class="list-group-item active">
+            <h4 class="list-group-item-heading">请填写资料</h4>
+          </a>
+        </div>
+        <form action="{{ url_for('insert_info',userid=userid)}}" method="post"><!--注册框-->
+          <div class="form-group">
+            <label for="gender">性别</label>
+            <input type="text" class="form-control" name="gender" id="gender" placeholder="男/女">
+          </div>
+          <div class="form-group">
+            <label for="city">城市</label>
+            <input type="text" class="form-control" name="city" id="city" placeholder="城市">
+          </div>
+          <div class="form-group">
+            <label for="province">省份</label>
+            <input type="text" class="form-control"  name="province" id="province" placeholder="省份">
+          </div>
+          <div class="form-group">
+            <label for="location">地区</label>
+            <input type="text" class="form-control"  name="location" id="location" placeholder="地区">
+          </div>
+          <button  type="submit" class="btn btn-success btn-lg btn-block ">提交</button>
+        </form>
+      </div>
+      <div class="col-md-3"></div>
+    </div>
+  </div>
+</div>
+
+ {% endblock %}
