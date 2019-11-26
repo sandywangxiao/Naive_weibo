@@ -8,7 +8,7 @@
 
 ## Naive Weibo
 + 注册（register）
-![register](images/register1.png ''register'')
+![register](images\register1.png ''register'')
 + 登录（login）
 ![login](images/login2.png ''login'')
 + 编辑资料（edit profile）
