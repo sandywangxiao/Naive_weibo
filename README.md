@@ -14,7 +14,7 @@
 ![login](images/login2.png )
 ### 编辑资料（edit profile）
 ![edit the profile](images/info3.png)
-###发送微博 （post a message）
+### 发送微博 （post a message）
 ![post](images/fbweibo2.png )
 ### 查看已发布微博（look at the messages posted）
 ![look at messages](images/fbweibo4.png )
