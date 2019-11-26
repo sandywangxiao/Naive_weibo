@@ -1,9 +1,9 @@
-##框架（Framework）
+## 框架（Framework）
 
 + 前端框架（front-end frame ）: Bootstrap3.3.7
-++ 网页设计在templates文件夹里面（front-end design in the templates folder）
+++  网页设计在templates文件夹里面（front-end design in the templates folder）
 + 后端框架（back-end frame）:  Flask
-++ 后端设计在back_end文件夹中（back-end design in the back_end folder）
+++  后端设计在back_end文件夹中（back-end design in the back_end folder）
 
 
 ## Naive Weibo
