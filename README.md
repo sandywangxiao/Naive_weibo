@@ -4,7 +4,7 @@
    +  网页设计在templates文件夹里面（front-end design in the templates folder）
 + 后端框架（back-end frame）:  Flask
    +  后端设计在back_end文件夹中（back-end design in the back_end folder）
-+ 图引擎系统（graph management system）：gStore
++ 图数据引擎系统（graph data management system）：gStore
 
 
 ## Naive Weibo
