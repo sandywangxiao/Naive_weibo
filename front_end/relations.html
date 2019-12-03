@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+
+{% block head %}
+  {{super()}}
+{% endblock %}
+
+{% block body %}
+<div class = "container" style="border:2px solid Tomato">
+<br>
+  <div class="list-group">
+          <a class="list-group-item ">
+            <h4 class="list-group-item-heading">用户{{userid1}}与用户{{userid2}}关系查询结果</h4>
+          </a>
+        </div>
+  <hr>
+  <h3>零跳关系</h3>
+  {% if out[0]==True %}
+  <p > &nbsp; <mark><span class="consult_a">{{userid1}}</span></mark> → <mark><span class="consult_b">{{userid2}}</span></mark></p>
+  {% endif %}
+
+  <h3>一跳关系</h3>
+  {% for x in out[1] %}
+  <p > &nbsp; <mark><span class="consult_a">{{userid1}}</span></mark> → <mark><span id="one_1">{{x.id1.value}}</span></mark> → <mark><span class="consult_b">{{userid2}}</span></mark></p>
+  {% endfor %}
+
+  <h3>两跳关系</h3>
+  {% for x in out[2] %}
+  <p > &nbsp; <mark><span class="consult_a">{{userid1}}</span></mark> → <mark><span id="two_1">{{x.id1.value}}</span></mark> → <mark><span id="two_2">{{x.id2.value}}</span></mark> → <mark><span class="consult_b">{{userid2}}</span></mark></p>
+  {% endfor %}
+
+  <h3>三跳关系</h3>
+  {% for x in out[3] %}
+  <p > &nbsp;<mark><span class="consult_a">{{userid1}}</span></mark> → <mark><span id="three_1">{{x.id1.value}}</span></mark> → <mark><span id="three_2">{{x.id2.value}}</span></mark> → <mark><span id="three_3">{{x.id3.value}}</span></mark> →  <mark><span class="consult_b">{{userid2}}</span></mark></p>
+  {% endfor %}
+
+  <br>
+</div>
+
+
+{% endblock %}
+
+
+
+
